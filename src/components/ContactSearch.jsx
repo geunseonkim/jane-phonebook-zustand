@@ -12,6 +12,7 @@ const ContactSearch = ({ searchName, setSearchName }) => {
           placeholder="Search by name"
           value={searchName}
           onChange={(e) => setSearchName(e.target.value)}
+          onFocus={() => setSearchName("")}
         />
         <button>Search</button>
       </form>

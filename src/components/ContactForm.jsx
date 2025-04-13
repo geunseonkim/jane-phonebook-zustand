@@ -21,6 +21,7 @@ const ContactForm = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
+          onFocus={(e) => setName("")}
         />
         <h3>Phone Number</h3>
         <input
@@ -29,6 +30,7 @@ const ContactForm = () => {
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
           required
+          onFocus={(e) => setPhoneNumber("")}
         />
         <button type="submit">Create</button>
       </form>

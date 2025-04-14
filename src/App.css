@@ -24,6 +24,12 @@ input {
   font-size: 15px;
 }
 
+input[type="checkbox"] {
+  width: 16px;
+  height: 14px;
+  margin-top: 20px;
+}
+
 button {
   padding: 10px;
   background-color: rgb(53, 37, 200);
@@ -44,6 +50,28 @@ button {
 .contactList-wrap {
   border-top: 1px solid rgb(182, 182, 182);
   min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactList-actions {
+  text-align: right;
+}
+
+.contactList-actions button {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 65px;
+  background-color: #eee;
+  color: black;
+}
+
+.contactList-actions button:hover {
+  background-color: #d8d7d7;
+}
+
+.contactList-actions button:focus {
+  background-color: #d8d7d7;
 }
 
 .contactSearch-wrap {
